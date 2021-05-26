@@ -1,0 +1,16 @@
+{
+  "name": "upickcolor",
+  "version": "1.0.0",
+  "description": "Simple color picker",
+  "main": "index.js",
+  "keywords": [
+    "ux",
+    "color",
+    "color-picker"
+],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juan Uskiano",
+  "license": "ISC"
+}
