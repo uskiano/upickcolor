@@ -1,0 +1,131 @@
+.ucolor-picker {
+  /*.dot-alpha {
+        top: 130px !important;
+    }*/
+}
+.ucolor-picker .palette {
+  width: 250px;
+  height: 150px;
+  border-radius: 1px;
+  position: relative;
+  overflow: hidden;
+}
+.ucolor-picker .palette .dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0px;
+  top: 0px;
+  border-radius: 100%;
+  border: solid 2px #151515;
+  cursor: pointer;
+  outline: none !important;
+  filter: blur(0.5px);
+}
+.ucolor-picker .hue,
+.ucolor-picker alpha {
+  position: relative;
+}
+.ucolor-picker .dot-hue,
+.ucolor-picker .dot-alpha {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 0px;
+  top: 0px;
+  border-radius: 100%;
+  background: #080808;
+  border: solid 1px #888;
+  cursor: pointer;
+  outline: none !important;
+}
+.ucolor-picker .panel {
+  margin: 6px 0px 0px 0px;
+  padding: 1px;
+  display: flex;
+  justify-content: space-between;
+}
+.ucolor-picker .panel .preview-group {
+  width: 30px;
+  height: 30px;
+  background: #bbb;
+  position: relative;
+  border: solid 1px #080808;
+}
+.ucolor-picker .panel .preview-group .preview,
+.ucolor-picker .panel .preview-group .preview-check {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.ucolor-picker .panel .preview-group .preview-check {
+  background: url(check1.svg);
+  background-size: 15px;
+}
+.ucolor-picker .panel .slides .hue,
+.ucolor-picker .panel .slides .alpha-group {
+  width: 140px;
+  height: 12px;
+  background: #a8a8a8;
+  border-radius: 1px;
+  position: relative;
+}
+.ucolor-picker .panel .slides .alpha-group {
+  margin-top: 8px;
+  background: #bbb;
+}
+.ucolor-picker .panel .slides .alpha-group .alpha-check,
+.ucolor-picker .panel .slides .alpha-group .alpha-hue {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.ucolor-picker .panel .slides .alpha-group .alpha-check {
+  background: url(check1.svg);
+}
+.ucolor-picker .text-group {
+  display: flex;
+  padding-top: 2px;
+  margin-top: 10px;
+  border-top: solid 1px hsl(320, 2%, 12%);
+  justify-content: space-evenly;
+}
+.ucolor-picker .text-group .color-field {
+  display: inline-block;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.ucolor-picker .text-group .color-field input {
+  width: 38px;
+  text-align: center;
+  display: block;
+  vertical-align: middle;
+  margin-top: 4px;
+  background: hsl(0, 0%, 6%);
+  border: solid 1px hsl(0, 0%, 20%);
+  font-size: 14px;
+  color: hsl(0, 0%, 49%);
+  border-radius: 3px;
+}
+.ucolor-picker .text-group .color-field input:focus {
+  outline: none !important;
+  border-color: #aaa;
+  box-shadow: 0px 0px 12px #646464;
+}
+.ucolor-picker .text-group .color-field legend {
+  padding: 5px 2px 0px 2px;
+  color: hsl(0, 0%, 25%);
+  user-select: none;
+}
+.quick-modal {
+  position: fixed;
+  width: auto;
+  height: auto;
+  z-index: 999;
+  background: hsl(338, 3%, 10%);
+  padding: 10px;
+}
